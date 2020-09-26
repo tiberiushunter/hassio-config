@@ -1,0 +1,24 @@
+# An * ensures that everything will be ignored.
+*
+# You can whitelist files/folders with !, these will not be ignored.
+!*.yaml
+!.gitignore
+!*.md
+
+# Directory (contents) ignores
+config/.cloud
+config/.storage
+config/.google.token
+config/deps
+
+# Specific file ignores
+config/ip_bans.yaml
+config/known_devices.yaml
+config/secrets.yaml
+
+# Ignore files created by IDE's
+.vscode
+.Trash*
+
+# Specific keeps
+!.gitkeep
