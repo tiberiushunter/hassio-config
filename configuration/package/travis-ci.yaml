@@ -7,12 +7,14 @@ build_ci:
           from: "started"
           to: "failed"
       action:
-        - service: notify.mobile_app_sm_n986b
-          data_template:
-            message: >
-              Travis build failed! {{ "\uD83E\uDD2C" }}
+        - service: notify.ALL_DEVICES
+          data:
+            title: Travis CI
+            message: Build Failed! {{ "\uD83E\uDD2C" }}
             data:
               url: https://travis-ci.com/tiberiushunter/hassio-config
+              group: Hassio
+              priority: high
 
     - alias: System Travis Build Passed
       trigger:
@@ -21,12 +23,14 @@ build_ci:
           from: "started"
           to: "passed"
       action:
-        - service: notify.mobile_app_sm_n986b
-          data_template:
-            message: >
-              Travis build passed! {{ "\uD83D\uDC4D" }}
+        - service: notify.ALL_DEVICES
+          data:
+            title: Travis CI
+            message: Build Passed! {{ "\uD83D\uDC4D" }}
             data:
               url: https://travis-ci.com/tiberiushunter/hassio-config
+              group: Hassio
+              priority: high
         - service: hassio.addon_start
           data:
             addon: core_git_pull

@@ -24,6 +24,7 @@ recorder: !include configuration/recorder.yaml
 tts:
   - platform: google_translate
 
+notify: !include_dir_merge_named configuration/notify
 group: !include_dir_merge_named configuration/group
 automation: !include_dir_merge_named configuration/automation
 script: !include_dir_merge_named configuration/script

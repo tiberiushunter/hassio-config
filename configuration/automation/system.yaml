@@ -5,17 +5,23 @@
     - platform: homeassistant
       event: start
   action:
-    - service: notify.mobile_app_sm_n986b
-      data_template:
-        message: >
-          Home Assistant back online! {{ "\uD83E\uDD29" }}
+    - service: notify.ALL_DEVICES
+      data:
+        title: Hassio System
+        message: Hassio back online! {{ "\uD83E\uDD29" }}
+        data:
+          group: Hassio
+          priority: high
 
 - alias: Hassio Shutdown Notification
   trigger:
     - platform: homeassistant
       event: shutdown
   action:
-    - service: notify.mobile_app_sm_n986b
-      data_template:
-        message: >
-          Home Assistant is going down! {{ "\uD83D\uDE34" }}
+    - service: notify.ALL_DEVICES
+      data:
+        title: Hassio System
+        message: Hassio is going down! {{ "\uD83D\uDE34" }}
+        data:
+          group: Hassio
+          priority: high

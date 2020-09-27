@@ -1,0 +1,4 @@
+- name: ALL_DEVICES
+  platform: group
+  services:
+    - service: mobile_app_sm_n986b
