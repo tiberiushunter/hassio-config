@@ -1,3 +1,6 @@
+# This loads the default set of tools and integrations used by hassio
+default_config:
+
 homeassistant:
   name: Home
   latitude: !secret latitude
@@ -10,23 +13,8 @@ homeassistant:
 
   packages: !include_dir_merge_named configuration/package
 
-config:
 frontend: 
-  themes: !include_dir_merge_named configuration/themes
-input_boolean:
-input_datetime:
-input_number:
-input_select:
-input_text:
-history:
-logbook:
-map:
-mobile_app:
-person:
-sun:
-system_health:
-updater:
-zone:
+  themes: !include_dir_merge_named configuration/theme
 
 http:
   ip_ban_enabled: true
