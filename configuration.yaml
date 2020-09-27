@@ -16,11 +16,13 @@ http:
   ip_ban_enabled: true
   login_attempts_threshold: 5
 
+recorder: !include configuration/recorder.yaml
+
 # Text to speech
 tts:
   - platform: google_translate
 
-group: !include groups.yaml
-automation: !include automations.yaml
-script: !include scripts.yaml
-scene: !include scenes.yaml
+group: !include_dir_merge_named configuration/group
+automation: !include_dir_merge_named configuration/automation
+script: !include_dir_merge_named configuration/script
+scene: !include_dir_merge_named configuration/scene
