@@ -33,9 +33,9 @@ build_ci:
 
   sensor:
     - platform: rest
-      resource: https://api.travis-ci.com/repos/tiberiushunter/hassio-config/builds
+      resource: https://api.travis-ci.com/repo/tiberiushunter%2Fhassio-config/builds?limit=1
       headers:
-        Accept: application/vnd.travis-ci.2+json
+        Travis-API-Version: 3
       value_template: "{{ value_json.builds[0].state }}"
       name: "Travis Build Status"
 
