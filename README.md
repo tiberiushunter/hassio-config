@@ -9,6 +9,7 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
+[![Build Status][travis-ci-shield]][travis-ci-url]
 ![Project Maintenance][maintenance-shield] 
 [![MIT License][license-shield]][license-url]
 
@@ -19,6 +20,7 @@
 
 <!-- ABOUT -->
 ## About
+
 A repository storing and backing up my Home Assistant configuration
 
 <!-- CONTRIBUTING -->
@@ -36,6 +38,7 @@ I'm very open to any and all contributions to my config, please let me know by c
 
 <!-- LICENSE -->
 ## License
+
 Distributed under the MIT License. See [LICENSE][license-url] for more information.
 
 <!-- ACKNOWLEDGEMENTS -->
@@ -62,6 +65,8 @@ Project Link: [https://github.com/tiberiushunter/hassio-config][project-url]
 
 <!-- Project Specific -->
 [project-url]: https://github.com/tiberiushunter/hassio-config
+[travis-ci-shield]: https://travis-ci.com/tiberiushunter/hassio-config.svg?branch=main
+[travis-ci-url]: https://travis-ci.com/tiberiushunter/hassio-config
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2020.svg
 [contributors-shield]: https://img.shields.io/github/contributors/tiberiushunter/hassio-config.svg?style=flat-square
 [contributors-url]: https://github.com/tiberiushunter/hassio-config/graphs/contributors
