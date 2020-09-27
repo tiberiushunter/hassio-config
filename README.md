@@ -23,6 +23,10 @@
 
 A repository storing and backing up my Home Assistant configuration
 
+## File Structure
+
+The entry point for Hassio is the `configuration.yaml` file. From there I've tried to split up the config into the various folders and files found under the `/configuration` directory. This has simply been to reduce the size of the `configuration.yaml` *especially as my previous installation of Hassio ended up being a nightmare to go through...*
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
