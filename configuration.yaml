@@ -1,18 +1,3 @@
-config:
-frontend:
-input_boolean:
-input_datetime:
-input_number:
-input_select:
-input_text:
-map:
-mobile_app:
-person:
-sun:
-system_health:
-updater:
-zone:
-
 homeassistant:
   name: Home
   latitude: !secret latitude
@@ -24,6 +9,23 @@ homeassistant:
   internal_url: !secret internal_url
 
   packages: !include_dir_merge_named configuration/package
+
+config:
+frontend:
+input_boolean:
+input_datetime:
+input_number:
+input_select:
+input_text:
+history:
+logbook:
+map:
+mobile_app:
+person:
+sun:
+system_health:
+updater:
+zone:
 
 http:
   ip_ban_enabled: true
