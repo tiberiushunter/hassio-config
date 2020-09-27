@@ -10,10 +10,10 @@ homeassistant:
   time_zone: Europe/London
   external_url: !secret external_url
   internal_url: !secret internal_url
-  packages: !include_dir_merge_named configuration/package
+  packages: !include_dir_merge_named configuration/package/
 
 frontend: 
-  themes: !include_dir_merge_named configuration/theme
+  themes: !include_dir_merge_named configuration/theme/
 
 http:
   ip_ban_enabled: true
@@ -24,9 +24,10 @@ recorder: !include configuration/recorder.yaml
 tts:
   - platform: google_translate
 
-notify: !include_dir_merge_named configuration/notify
-group: !include_dir_merge_named configuration/group
-automation: !include_dir_merge_named configuration/automation
-script: !include_dir_merge_named configuration/script
-scene: !include_dir_merge_named configuration/scene
-sensor: !include_dir_merge_named configuration/sensor
+notify: !include_dir_merge_list configuration/notify/
+automation: !include_dir_merge_list configuration/automation/
+
+group: !include_dir_merge_named configuration/group/
+script: !include_dir_merge_named configuration/script/
+scene: !include_dir_merge_named configuration/scene/
+sensor: !include_dir_merge_named configuration/sensor/
