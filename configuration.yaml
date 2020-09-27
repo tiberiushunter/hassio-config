@@ -11,7 +11,8 @@ homeassistant:
   packages: !include_dir_merge_named configuration/package
 
 config:
-frontend:
+frontend: 
+  themes: !include_dir_merge_named configuration/themes
 input_boolean:
 input_datetime:
 input_number:
