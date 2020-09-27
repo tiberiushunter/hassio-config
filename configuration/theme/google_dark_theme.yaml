@@ -4,7 +4,6 @@
 # YouTube Channel: https://youtube.com/juanmtech
 # My Home Assistant Config files: https://github.com/JuanMTech/Home_Assistant_files
 #
-#
 Google Dark Theme:
   # Header:
   app-header-background-color: rgb(23, 23, 23)
