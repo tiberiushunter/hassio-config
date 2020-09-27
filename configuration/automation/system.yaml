@@ -1,0 +1,21 @@
+# Triggers a notification whenever the system boots or shuts down.
+
+- alias: Hassio Startup Notification
+  trigger:
+    - platform: homeassistant
+      event: start
+  action:
+    - service: notify.mobile_app_sm_n986b
+      data_template:
+        message: >
+          Home Assistant back online! {{ "\uD83E\uDD29" }}
+
+- alias: Hassio Shutdown Notification
+  trigger:
+    - platform: homeassistant
+      event: shutdown
+  action:
+    - service: notify.mobile_app_sm_n986b
+      data_template:
+        message: >
+          Home Assistant is going down! {{ "\uD83D\uDE34" }}
