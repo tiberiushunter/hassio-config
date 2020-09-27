@@ -12,6 +12,8 @@ homeassistant:
   external_url: !secret external_url
   internal_url: !secret internal_url
 
+  packages: !include_dir_merge_named configuration/package
+
 http:
   ip_ban_enabled: true
   login_attempts_threshold: 5
@@ -26,3 +28,4 @@ group: !include_dir_merge_named configuration/group
 automation: !include_dir_merge_named configuration/automation
 script: !include_dir_merge_named configuration/script
 scene: !include_dir_merge_named configuration/scene
+sensor: !include_dir_merge_named configuration/sensor
