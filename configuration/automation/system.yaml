@@ -7,8 +7,8 @@
   action:
     - service: notify.ALL_DEVICES
       data:
-        title: Hassio System
-        message: Hassio back online! {{ "\uD83E\uDD29" }}
+        title: Hassio
+        message: Back Online! {{ "\uD83E\uDD29" }}
         data:
           group: Hassio
           priority: high
@@ -20,8 +20,8 @@
   action:
     - service: notify.ALL_DEVICES
       data:
-        title: Hassio System
-        message: Hassio is going down! {{ "\uD83D\uDE34" }}
+        title: Hassio
+        message: Going Offline! {{ "\uD83D\uDE34" }}
         data:
           group: Hassio
           priority: high

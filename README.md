@@ -48,6 +48,7 @@ Distributed under the MIT License. See [LICENSE][license-url] for more informati
 * [Img Shields][2]
 * [Choose an Open Source License][3]
 * [othneildrew's Best README Template][4]
+* [frenck's Home Assistant config][5]
 
 <!-- CONTACT -->
 ## Contact
@@ -92,3 +93,4 @@ Project Link: [https://github.com/tiberiushunter/hassio-config][project-url]
 [2]: https://shields.io
 [3]: https://choosealicense.com
 [4]: https://github.com/othneildrew/Best-README-Template
+[5]: https://github.com/frenck/home-assistant-config
