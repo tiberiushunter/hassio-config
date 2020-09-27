@@ -4,6 +4,7 @@
 !*.yaml
 !.gitignore
 !*.md
+!*.sample
 
 # Directory (contents) ignores
 .cloud
