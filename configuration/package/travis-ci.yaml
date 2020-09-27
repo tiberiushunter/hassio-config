@@ -33,7 +33,7 @@ build_ci:
 
   sensor:
     - platform: rest
-      resource: https://travis-ci.com/tiberiushunter/hass-config/builds
+      resource: https://api.travis-ci.org/repos/tiberiushunter/hassio-config/builds
       headers:
         Accept: application/vnd.travis-ci.2+json
       value_template: "{{ value_json.builds[0].state }}"
