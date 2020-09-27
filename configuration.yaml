@@ -1,6 +1,17 @@
-
-# Configure a default setup of Home Assistant (frontend, api, etc)
-default_config:
+config:
+frontend:
+input_boolean:
+input_datetime:
+input_number:
+input_select:
+input_text:
+map:
+mobile_app:
+person:
+sun:
+system_health:
+updater:
+zone:
 
 homeassistant:
   name: Home
