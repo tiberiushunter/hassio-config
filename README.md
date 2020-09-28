@@ -9,7 +9,8 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![Build Status][travis-ci-shield]][travis-ci-url]
+[![Build Status][travis-ci-shield-main]][travis-ci-url]
+[![Build Status][travis-ci-shield-dev]][travis-ci-url]
 ![Project Maintenance][maintenance-shield] 
 [![MIT License][license-shield]][license-url]
 
@@ -70,26 +71,37 @@ Project Link: [https://github.com/tiberiushunter/hassio-config][project-url]
 
 <!-- Project Specific -->
 [project-url]: https://github.com/tiberiushunter/hassio-config
-[travis-ci-shield]: https://travis-ci.com/tiberiushunter/hassio-config.svg?branch=main
+
+[travis-ci-shield-dev]: https://img.shields.io/travis/com/tiberiushunter/hassio-config/dev?logo=travis&style=for-the-badge&label=dev
+[travis-ci-shield-main]: https://img.shields.io/travis/com/tiberiushunter/hassio-config/main?logo=travis&style=for-the-badge&label=main
+
 [travis-ci-url]: https://travis-ci.com/tiberiushunter/hassio-config
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2020.svg
-[contributors-shield]: https://img.shields.io/github/contributors/tiberiushunter/hassio-config.svg?style=flat-square
+
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2020.svg?style=for-the-badge
+
+[contributors-shield]: https://img.shields.io/github/contributors/tiberiushunter/hassio-config.svg?style=for-the-badge
 [contributors-url]: https://github.com/tiberiushunter/hassio-config/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/tiberiushunter/hassio-config.svg?style=flat-square
+
+[forks-shield]: https://img.shields.io/github/forks/tiberiushunter/hassio-config.svg?style=for-the-badge
 [forks-url]: https://github.com/tiberiushunter/hassio-config/network/members
-[stars-shield]: https://img.shields.io/github/stars/tiberiushunter/hassio-config.svg?style=flat-square
+
+[stars-shield]: https://img.shields.io/github/stars/tiberiushunter/hassio-config.svg?style=for-the-badge
 [stars-url]: https://github.com/tiberiushunter/hassio-config/stargazers
-[issues-shield]: https://img.shields.io/github/issues/tiberiushunter/hassio-config.svg?style=flat-square
+
+[issues-shield]: https://img.shields.io/github/issues/tiberiushunter/hassio-config.svg?style=for-the-badge
 [issues-url]: https://github.com/tiberiushunter/hassio-config/issues
-[license-shield]: https://img.shields.io/github/license/tiberiushunter/hassio-config.svg?style=flat-square
+
+[license-shield]: https://img.shields.io/github/license/tiberiushunter/hassio-config.svg?style=for-the-badge
 [license-url]: https://github.com/tiberiushunter/hassio-config/blob/main/LICENSE
-[github-shield]: https://img.shields.io/badge/-GitHub-black.svg?style=flat-square&logo=github&colorB=555
 
 <!-- Contact Specific -->
+[github-shield]: https://img.shields.io/badge/-GitHub-black.svg?style=for-the-badge&logo=github&colorB=555
 [github-url]: https://github.com/tiberiushunter
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/sam-welek
-[twitter-shield]: https://img.shields.io/badge/-Twitter-black.svg?style=flat-square&logo=twitter&colorB=555
+
+[twitter-shield]: https://img.shields.io/badge/-Twitter-black.svg?style=for-the-badge&logo=twitter&colorB=555
 [twitter-url]: https://twitter.com/samwelek
 
 <!-- Acknowledgement Specific -->
