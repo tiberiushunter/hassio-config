@@ -1,2 +1,0 @@
-  - platform: travisci
-    api_key: !secret travisci-token

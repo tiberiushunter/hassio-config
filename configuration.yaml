@@ -1,4 +1,5 @@
 # This loads the default set of tools and integrations used by hassio
+
 default_config:
 
 homeassistant:
