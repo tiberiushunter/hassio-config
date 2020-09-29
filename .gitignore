@@ -6,6 +6,7 @@
 !*.yaml
 !*.yml
 !.gitignore
+!.gitattributes
 !*.md
 !*.sample
 
