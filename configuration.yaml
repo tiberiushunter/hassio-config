@@ -25,6 +25,12 @@ recorder: !include configuration/recorder.yaml
 tts:
   - platform: google_translate
 
+# Used to enable live stream from camera
+# https://www.home-assistant.io/integrations/stream
+stream:
+
+camera: !include configuration/camera.yaml
+
 notify: !include_dir_merge_list configuration/notify/
 automation: !include_dir_merge_list configuration/automation/
 
