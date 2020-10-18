@@ -1,6 +1,6 @@
 # This file contains a list of devices that should be notified when ALL_DEVICES group is called.
 
-# - name: ALL_DEVICES
-#   platform: group
-#   services:
-#     - service: notify.mobile_app_sam_s_phone
+- name: ALL_DEVICES
+  platform: group
+  services:
+    - service: notify.mobile_app_sam_s_phone

@@ -1,27 +1,27 @@
-# # Triggers a notification whenever the system boots or shuts down.
+# Triggers a notification whenever the system boots or shuts down.
 
-# - alias: Hassio Startup Notification
-#   trigger:
-#     - platform: homeassistant
-#       event: start
-#   action:
-#     - service: notify.ALL_DEVICES
-#       data:
-#         title: Hassio
-#         message: Back Online! {{ "\uD83E\uDD29" }}
-#         data:
-#           group: Hassio
-#           priority: high
+- alias: Hassio Startup Notification
+  trigger:
+    - platform: homeassistant
+      event: start
+  action:
+    - service: notify.ALL_DEVICES
+      data:
+        title: Hassio
+        message: Back Online! {{ "\uD83E\uDD29" }}
+        data:
+          group: Hassio
+          priority: high
 
-# - alias: Hassio Shutdown Notification
-#   trigger:
-#     - platform: homeassistant
-#       event: shutdown
-#   action:
-#     - service: notify.ALL_DEVICES
-#       data:
-#         title: Hassio
-#         message: Going Offline! {{ "\uD83D\uDE34" }}
-#         data:
-#           group: Hassio
-#           priority: high
+- alias: Hassio Shutdown Notification
+  trigger:
+    - platform: homeassistant
+      event: shutdown
+  action:
+    - service: notify.ALL_DEVICES
+      data:
+        title: Hassio
+        message: Going Offline! {{ "\uD83D\uDE34" }}
+        data:
+          group: Hassio
+          priority: high
