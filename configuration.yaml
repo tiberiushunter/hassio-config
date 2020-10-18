@@ -25,10 +25,6 @@ recorder: !include configuration/recorder.yaml
 tts:
   - platform: google_translate
 
-media_player:
-  - platform: braviatv
-    host: !secret WDC01TV01
-
 notify: !include_dir_merge_list configuration/notify/
 automation: !include_dir_merge_list configuration/automation/
 
