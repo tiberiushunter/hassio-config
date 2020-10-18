@@ -11,7 +11,7 @@
 
 [![Build Status][travis-ci-shield-main]][travis-ci-url]
 [![Build Status][travis-ci-shield-dev]][travis-ci-url]
-![Project Maintenance][maintenance-shield] 
+![Project Maintenance][maintenance-shield]
 [![MIT License][license-shield]][license-url]
 
 [![Contributors][contributors-shield]][contributors-url]
@@ -31,7 +31,7 @@ The entry point for Hassio is the `configuration.yaml` file. From there I've tri
 <!-- CONTRIBUTING -->
 ## Contributing
 
-You've found a bug in my config, a mistake in the docs or maybe you want to add a new feature? :thinking: 
+You've found a bug in my config, a mistake in the docs or maybe you want to add a new feature? :thinking:
 
 I'm very open to any and all contributions to my config, please let me know by creating an [issue on the repository][issues-url] and feel free to create a pull request with your changes :heart:
 
@@ -60,7 +60,7 @@ Distributed under the MIT License. See [LICENSE][license-url] for more informati
 
 Owner: Sam Welek
 
-[![GitHub][github-shield]][github-url] 
+[![GitHub][github-shield]][github-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![Twitter][twitter-shield]][twitter-url]
 

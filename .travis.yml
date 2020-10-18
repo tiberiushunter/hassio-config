@@ -5,7 +5,7 @@ python:
 install:
   - "pip3 install homeassistant"
 script:
-  - "mv secrets.yaml.sample secrets.yaml"
+  - "mv secrets.sample.yaml secrets.yaml"
   - "touch fullchain.pem"
   - "touch privkey.pem"
   - "hass --version"
