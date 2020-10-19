@@ -20,7 +20,7 @@ http:
   ip_ban_enabled: true
   login_attempts_threshold: 5
 
-recorder: !include configuration/recorder.yaml
+recorder: !include configuration/integrations/recorder.yaml
 
 tts:
   - platform: google_translate
@@ -29,7 +29,9 @@ tts:
 # https://www.home-assistant.io/integrations/stream
 stream:
 
-camera: !include configuration/camera.yaml
+camera: !include configuration/integrations/camera.yaml
+
+spotify: !include configuration/integrations/spotify.yaml
 
 notify: !include_dir_merge_list configuration/notify/
 automation: !include_dir_merge_list configuration/automation/
