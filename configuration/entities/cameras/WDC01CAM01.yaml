@@ -1,0 +1,12 @@
+---
+# 
+# WDC01CAM01 (Porch Camera)
+#
+# https://www.home-assistant.io/integrations/generic_ip_camera/
+
+- platform: generic
+  name: WDC01CAM01
+  still_image_url: !secret WDC01CAM01_still
+  stream_source: !secret WDC01CAM01_stream
+  username: !secret WDC01CAM01_username
+  password: !secret WDC01CAM01_password
