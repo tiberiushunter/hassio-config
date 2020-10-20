@@ -1,4 +1,7 @@
+---
+# 
 # Triggers a notification whenever the system boots or shuts down.
+#
 
 - alias: Hassio Startup Notification
   trigger:

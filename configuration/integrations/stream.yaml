@@ -1,0 +1,7 @@
+---
+# 
+# Adds the Stream integration to provide a way to proxy live streams
+#
+# https://www.home-assistant.io/integrations/stream
+
+stream:

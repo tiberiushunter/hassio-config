@@ -1,0 +1,7 @@
+---
+# 
+# Groupings of multiple entities 
+#
+# https://www.home-assistant.io/integrations/group/
+
+group: !include_dir_merge_named ../entities/groups/

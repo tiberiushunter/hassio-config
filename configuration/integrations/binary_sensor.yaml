@@ -1,0 +1,7 @@
+---
+# 
+# Binary Sensors used by Home Assistant
+#
+# https://www.home-assistant.io/integrations/binary_sensor/
+
+binary_sensor: !include_dir_list ../entities/binary_sensors/
