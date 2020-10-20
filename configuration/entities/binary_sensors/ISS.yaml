@@ -1,8 +1,0 @@
----
-# 
-# Sensor for showing when the ISS is above my home location
-#
-# https://www.home-assistant.io/integrations/iss/
-
-platform: iss
-show_on_map: true
