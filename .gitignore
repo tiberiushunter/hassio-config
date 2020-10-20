@@ -1,16 +1,3 @@
-# An * ensures that everything will be ignored.
-*
-# You can whitelist files/folders with !, these will not be ignored.
-!configuration/
-!configuration/*
-!configuration/entities/*
-!*.yaml
-!*.yml
-!.gitignore
-!.gitattributes
-!*.md
-!*.sample
-
 # Directory (contents) ignores
 .cloud
 .storage
