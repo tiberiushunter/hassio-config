@@ -1,0 +1,8 @@
+---
+# 
+# Settings for the Home Assistant front end.
+#
+# https://www.home-assistant.io/integrations/frontend/
+
+frontend: 
+  themes: !include_dir_merge_named ../themes/

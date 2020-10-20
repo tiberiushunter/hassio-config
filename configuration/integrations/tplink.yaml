@@ -1,0 +1,14 @@
+---
+# 
+# Settings relating to my TP Link Kasa plugs
+#
+# As the plugs sit in the IoT VLAN I have to add them through 
+# this configuration entry rather than using the UI
+#
+# https://www.home-assistant.io/integrations/tplink/
+
+tplink:     
+  discovery: false
+  switch:
+    -  host: !secret WDC01PLG01
+  

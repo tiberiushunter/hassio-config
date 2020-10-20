@@ -1,0 +1,8 @@
+---
+#  
+# Settings relating to Text-to-Speech functionality
+#
+# https://www.home-assistant.io/integrations/tts/
+
+tts:
+  - platform: google_translate

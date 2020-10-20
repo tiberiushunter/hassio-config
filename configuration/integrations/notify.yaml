@@ -1,0 +1,7 @@
+---
+# 
+# Settings for Notifiers
+#
+# https://www.home-assistant.io/integrations/notify/
+
+notify: !include_dir_merge_list ../entities/notifiers/

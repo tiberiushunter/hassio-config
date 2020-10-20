@@ -1,9 +1,7 @@
-# Settings relating to my security camera setup
-# https://www.home-assistant.io/integrations/generic_ip_camera/
+---
+# 
+# Includes a list of cameras and camera feeds used in Home Assistant
+#
+# https://www.home-assistant.io/integrations/camera
 
-- platform: generic
-  name: WDC01CAM01
-  still_image_url: !secret WDC01CAM01_still
-  stream_source: !secret WDC01CAM01_stream
-  username: !secret WDC01CAM01_username
-  password: !secret WDC01CAM01_password
+camera: !include_dir_merge_list ../entities/camera/
