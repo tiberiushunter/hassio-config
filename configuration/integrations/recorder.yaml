@@ -13,3 +13,6 @@ recorder:
       - sensor.date
     entity_globs:
       - sensor.sams_phone*
+      - sensor.adguard*
+      - sensor.iss*
+      - sensor.cert*
