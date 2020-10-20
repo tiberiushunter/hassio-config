@@ -7,4 +7,8 @@
 #
 # https://www.home-assistant.io/integrations/tplink/
 
-tplink: !include_dir_list ../entities/tplink/
+tplink:     
+  discovery: false
+  switch:
+    -  host: !secret WDC01PLG01
+  
