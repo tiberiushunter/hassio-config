@@ -1,2 +1,4 @@
 custom_components/* linguist-vendored=true
+www/community/* linguist-vendored=true
+
 *.yaml linguist-detectable=true
