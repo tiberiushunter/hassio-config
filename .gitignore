@@ -4,6 +4,15 @@
 .google.token
 deps
 
+# Generic ignores
+*.log
+*.db
+*.db-shm
+*.db-wal
+*.pyc
+._*
+__pycache__
+
 # Specific file ignores
 ip_bans.yaml
 known_devices.yaml
