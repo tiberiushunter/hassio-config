@@ -24,9 +24,23 @@
 
 A repository storing and backing up my Home Assistant configuration
 
+<!-- FILE STRUCTURE -->
 ## File Structure
 
-The entry point for Hassio is the `configuration.yaml` file. From there I've tried to split up the config into the various folders and files found under the `/configuration` directory. This has simply been to reduce the size of the `configuration.yaml` *especially as my previous installation of Hassio ended up being a nightmare to go through...*
+The entry point for Hassio is the `configuration.yaml` file. From there I've split up the configuration into various folders and files found under the `/configuration/` directory.
+
+This has simply been to reduce the size of the `configuration.yaml` *especially as my previous installation of Hassio ended up being a nightmare to maintain..* :roll_eyes:
+
+From the `configuration.yaml` file, all the files under the `configuration/integrations/` directory get imported - this lists what you'd likely see in a regular configuration file.
+
+Once an integration contains any entities, sensors, scenes, scripts, etc. I then break that down into it's own file under whichever type of integration it is - For example, for the `camera:` integration I've created a separate file under `configuration/entities/camera/` directory for each camera.
+
+<!-- USAGE -->
+## Usage
+
+This repository has been designed to be used with the default [git pull addon][addon-git-pull] once the build passes on the main branch.
+
+When there are changes to any of the configuration files Hassio will pull the latest changes and automatically restart :tada:
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -53,7 +67,7 @@ Distributed under the MIT License. See [LICENSE][license-url] for more informati
 * [Img Shields][2]
 * [Choose an Open Source License][3]
 * [othneildrew's Best README Template][4]
-* [frenck's Home Assistant config][5]
+* [Frenck's Home Assistant Config][5]
 
 <!-- CONTACT -->
 ## Contact
@@ -93,6 +107,8 @@ Project Link: [https://github.com/tiberiushunter/hassio-config][project-url]
 
 [license-shield]: https://img.shields.io/github/license/tiberiushunter/hassio-config.svg?style=for-the-badge
 [license-url]: https://github.com/tiberiushunter/hassio-config/blob/main/LICENSE
+
+[addon-git-pull]: https://github.com/home-assistant/hassio-addons/tree/master/git_pull
 
 <!-- Contact Specific -->
 [github-shield]: https://img.shields.io/badge/-GitHub-black.svg?style=for-the-badge&logo=github&colorB=555
