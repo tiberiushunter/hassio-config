@@ -13,5 +13,5 @@
     service: mqtt.publish
     data_template:
       topic: location/iss
-      payload_template: '{"longitude": "{{ states.iss_position.longitude | float }}","latitude": "{{ states.iss_position.latitude | float }}"}'
+      payload_template: '{"longitude": "{{ states.sensor.iss_coordinates.attributes.iss_position.longitude | float }}","latitude": "{{ states.sensor.iss_coordinates.attributes.iss_position.latitude | float }}"}'
       retain: true
