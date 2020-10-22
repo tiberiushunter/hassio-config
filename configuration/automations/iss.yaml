@@ -1,0 +1,17 @@
+---
+#
+# ISS Automation
+#
+# Used to publish updates to show ISS on the Map
+# Based upon answer from https://community.home-assistant.io/t/international-space-station-sensor/9760/26
+
+- alias: 'ISS Location Update'
+  trigger:
+    - platform: state
+      entity_id: sensor.iss_coordinates
+  action:
+    service: mqtt.publish
+    data_template:
+      topic: location/iss
+      payload_template: '{"longitude": "{{ states.iss_position.longitude | float }}","latitude": "{{ states.iss_position.latitude | float }}"}'
+      retain: true
