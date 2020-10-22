@@ -1,7 +1,7 @@
 ---
 # 
-# Importing all scripts
+# Device Tracker platform allowing monitoring of MQTT topics
 #
-# https://www.home-assistant.io/integrations/script/
+# https://www.home-assistant.io/integrations/mqtt_json/
 
-script: !include_dir_merge_named ../scripts/
+device_tracker: !include_dir_merge_list ../entities/device_trackers/
