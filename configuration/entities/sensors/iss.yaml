@@ -6,7 +6,6 @@
 
 - platform: rest
   name: ISS Coordinates
-  icon: mdi:space-station
   json_attributes:
     - timestamp
     - iss_position
@@ -18,7 +17,6 @@
 
 - platform: rest
   name: ISS Pass times
-  icon: mdi:clock-out
   json_attributes:
     - request
     - response
@@ -30,7 +28,6 @@
 
 - platform: rest
   name: ISS People in space
-  icon: mdi:account-group
   json_attributes:
     - people
     - number
