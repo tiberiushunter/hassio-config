@@ -1,7 +1,12 @@
-# ISS
-# Modified from https://community.home-assistant.io/t/international-space-station-sensor/9760/26
+---
+# 
+# Sensors relating to the International Space Station
+#
+# Based upon answer from https://community.home-assistant.io/t/international-space-station-sensor/9760/26
+
 - platform: rest
-  name: iss_coordinates
+  name: ISS Coordinates
+  icon: mdi:space-station
   json_attributes:
     - timestamp
     - iss_position
@@ -13,6 +18,7 @@
 
 - platform: rest
   name: ISS Pass times
+  icon: mdi:clock-out
   json_attributes:
     - request
     - response
@@ -24,6 +30,7 @@
 
 - platform: rest
   name: ISS People in space
+  icon: mdi:account-group
   json_attributes:
     - people
     - number
