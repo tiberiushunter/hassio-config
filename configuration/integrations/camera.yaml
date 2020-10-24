@@ -1,7 +1,7 @@
 ---
 # 
-# Includes a list of cameras and camera feeds used in Home Assistant
+# Includes a list of cameras and camera feeds used in Home Assistant.
 #
-# https://www.home-assistant.io/integrations/camera
+# https://www.home-assistant.io/integrations/camera/
 
 camera: !include_dir_merge_list ../entities/cameras/
