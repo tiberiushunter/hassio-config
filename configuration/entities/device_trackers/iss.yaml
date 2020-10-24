@@ -1,6 +1,6 @@
 ---
 # 
-# mqtt_json device tracker using the ISS sensors
+# mqtt_json device tracker using the ISS sensors.
 #
 # https://www.home-assistant.io/integrations/mqtt_json/
 # Based upon https://community.home-assistant.io/t/setting-the-lat-and-lon-attributes-to-a-tracking-device/55491/3
