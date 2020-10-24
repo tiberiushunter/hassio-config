@@ -1,6 +1,6 @@
 ---
 # 
-# Http settings for serving the Home Assistant front end
+# Http settings for serving the Home Assistant front end.
 #
 # https://www.home-assistant.io/integrations/http/
 

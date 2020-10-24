@@ -33,3 +33,36 @@
     - number
   value_template: "{{ value_json['number'] }}"
   resource: 'http://api.open-notify.org/astros.json'
+ 
+- platform: template
+  sensors:
+    iss_risetime_0:
+      value_template: '{% if states.sensor.iss_pass_times %}{{ states.sensor.iss_pass_times.attributes["response"][0]["risetime"] | timestamp_custom("%a %d %b %Y %H:%M:%S") }}{% endif %}'
+      friendly_name: ISS Risetime Next
+    iss_duration_0:
+      value_template: '{% if states.sensor.iss_pass_times %}{{ states.sensor.iss_pass_times.attributes["response"][0]["duration"] }}{% endif %}'
+      friendly_name: ISS Duration Next
+    iss_risetime_1:
+      value_template: '{% if states.sensor.iss_pass_times %}{{ states.sensor.iss_pass_times.attributes["response"][1]["risetime"] | timestamp_custom("%a %d %b %Y %H:%M:%S") }}{% endif %}'
+      friendly_name: ISS Risetime 2nd
+    iss_duration_1:
+      value_template: '{% if states.sensor.iss_pass_times %}{{ states.sensor.iss_pass_times.attributes["response"][1]["duration"] }}{% endif %}'
+      friendly_name: ISS Duration 2nd
+    iss_risetime_2:
+      value_template: '{% if states.sensor.iss_pass_times %}{{ states.sensor.iss_pass_times.attributes["response"][2]["risetime"] | timestamp_custom("%a %d %b %Y %H:%M:%S") }}{% endif %}'
+      friendly_name: ISS Risetime 3rd
+    iss_duration_2:
+      value_template: '{% if states.sensor.iss_pass_times %}{{ states.sensor.iss_pass_times.attributes["response"][2]["duration"] }}{% endif %}'
+      friendly_name: ISS Duration 3rd
+    iss_risetime_3:
+      value_template: '{% if states.sensor.iss_pass_times %}{{ states.sensor.iss_pass_times.attributes["response"][3]["risetime"] | timestamp_custom("%a %d %b %Y %H:%M:%S") }}{% endif %}'
+      friendly_name: ISS Risetime 4th
+    iss_duration_3:
+      value_template: '{% if states.sensor.iss_pass_times %}{{ states.sensor.iss_pass_times.attributes["response"][3]["duration"] }}{% endif %}'
+      friendly_name: ISS Duration 4th
+    iss_risetime_4:
+      value_template: '{% if states.sensor.iss_pass_times %}{{ states.sensor.iss_pass_times.attributes["response"][4]["risetime"] | timestamp_custom("%a %d %b %Y %H:%M:%S") }}{% endif %}'
+      friendly_name: ISS Risetime 5th
+    iss_duration_4:
+      value_template: '{% if states.sensor.iss_pass_times %}{{ states.sensor.iss_pass_times.attributes["response"][4]["duration"] }}{% endif %}'
+      friendly_name: ISS Duration 5th

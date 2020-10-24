@@ -1,6 +1,6 @@
 ---
 # 
-# Device Tracker platform allowing monitoring of MQTT topics
+# Device Tracker platform allowing monitoring of MQTT topics.
 #
 # https://www.home-assistant.io/integrations/mqtt_json/
 

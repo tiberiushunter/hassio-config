@@ -1,0 +1,7 @@
+---
+# 
+# The ssdp “Simple Service Discovery Protocol” (part of UPnP) integration will scan the network for supported devices and services.
+#
+# https://www.home-assistant.io/integrations/ssdp/
+
+ssdp: ~

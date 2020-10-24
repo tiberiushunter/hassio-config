@@ -1,7 +1,8 @@
 ---
 # 
-# Importing all automations
+# Importing all automations created by and for Home Assistant.
 #
 # https://www.home-assistant.io/docs/automation/
 
 automation: !include_dir_merge_list ../automations/
+automation manual: !include_dir_merge_list ../automations.yaml

@@ -1,0 +1,7 @@
+---
+# 
+# The history integration is designed to track everything going on within Home Assistant.
+#
+# https://www.home-assistant.io/integrations/history/
+
+history: ~
