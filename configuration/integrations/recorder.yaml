@@ -1,18 +1,17 @@
 ---
 # 
-# Settings for purging the database (MariaDB) so that it only keeps the last 14 days.
+# Settings for purging the database (MariaDB) so that it only keeps the last 90 days.
 # It also excludes a variety of sensors that I don't want to be included in the DB.
 #
 # https://www.home-assistant.io/integrations/recorder/
 
 recorder:
   db_url: !secret db_url
-  purge_keep_days: 14
+  purge_keep_days: 90
   exclude:
     entities:
       - sensor.date
     entity_globs:
-      - sensor.sams_phone*
       - sensor.adguard*
       - sensor.iss*
       - sensor.cert*
