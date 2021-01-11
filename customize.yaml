@@ -1,0 +1,8 @@
+sensor.iss_people_in_space:
+  icon: mdi:account-multiple
+sensor.iss_pass_times:
+  icon: mdi:clock-out
+sensor.iss_coordinates: {}
+device_tracker.iss:
+  icon: mdi:space-station
+  entity_picture: /local/saticon.gif
