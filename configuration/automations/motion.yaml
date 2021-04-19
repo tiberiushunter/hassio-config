@@ -3,17 +3,33 @@
 # This package contains the automation for sending motion notifications
 #
 
-- alias: WDC01CAM01 Motion Detected
+- alias: WDC01CAM01 Motion Recorded
   trigger:
     - platform: mqtt
       topic: motion/WDC01CAM01
+      value_template: "{{ value_json.url, value_json.image }}"
   action:
     - service: notify.ADMIN_DEVICES
       data:
         title: Hassio
-        message: Motion Detected!
+        message: WDC01CAM01 Motion Recorded
         data:
           clickAction: "{{ trigger.payload_json.url }}"
           image: "{{ trigger.payload_json.image }}"
+          group: Hassio
+          priority: high
+
+- alias: WDC01CAM01 Motion Detected
+  trigger:
+    - platform: mqtt
+      topic: motion/WDC01CAM01
+      value_template: "{{ value_json.time }}"
+  action:
+    - service: notify.ADMIN_DEVICES
+      data:
+        title: Hassio
+        message: WDC01CAM01 Motion Detected
+        data:
+          timeout: 60
           group: Hassio
           priority: high
