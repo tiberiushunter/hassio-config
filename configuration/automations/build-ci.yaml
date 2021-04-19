@@ -11,7 +11,7 @@
       from: "started"
       to: "failed"
   action:
-    - service: notify.ALL_DEVICES
+    - service: notify.ADMIN_DEVICES
       data:
         title: Travis CI
         message: Build Failed! {{ "\uD83E\uDD2C" }}
@@ -27,7 +27,7 @@
       from: "started"
       to: "passed"
   action:
-    - service: notify.ALL_DEVICES
+    - service: notify.ADMIN_DEVICES
       data:
         title: Travis CI
         message: Build Passed! {{ "\uD83D\uDC4D" }}
