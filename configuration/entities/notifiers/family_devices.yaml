@@ -1,8 +1,8 @@
 ---
 # This file contains a list of devices that should be notified when FAMILY_DEVICES group is called.
 
-name: FAMILY_DEVICES
-platform: group
-services:
-  - service: mobile_app_sam_s_phone
-  - service: mobile_app_pixel_4a
+- name: FAMILY_DEVICES
+  platform: group
+  services:
+    - service: mobile_app_sam_s_phone
+    - service: mobile_app_pixel_4a
