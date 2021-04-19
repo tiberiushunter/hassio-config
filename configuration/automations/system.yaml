@@ -8,7 +8,7 @@
     - platform: homeassistant
       event: start
   action:
-    - service: notify.ALL_DEVICES
+    - service: notify.ADMIN_DEVICES
       data:
         title: Hassio
         message: Back Online! {{ "\uD83E\uDD29" }}
@@ -21,7 +21,7 @@
     - platform: homeassistant
       event: shutdown
   action:
-    - service: notify.ALL_DEVICES
+    - service: notify.ADMIN_DEVICES
       data:
         title: Hassio
         message: Going Offline! {{ "\uD83D\uDE34" }}
