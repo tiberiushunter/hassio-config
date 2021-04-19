@@ -1,7 +1,7 @@
 ---
 # This file contains a list of devices that should be notified when ADMIN_DEVICES group is called.
 
-name: ADMIN_DEVICES
-platform: group
-services:
-  - service: mobile_app_sam_s_phone
+- name: ADMIN_DEVICES
+  platform: group
+  services:
+    - service: mobile_app_sam_s_phone
