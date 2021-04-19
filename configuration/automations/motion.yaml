@@ -1,0 +1,17 @@
+---
+# 
+# This package contains the automation for sending motion notifications
+#
+
+- alias: WDC01CAM01 Motion Detected
+  trigger:
+    - platform: mqtt
+      topic: motion/WDC01CAM01
+  action:
+    - service: notify.FAMILY_DEVICES
+      data:
+        title: Hassio
+        message: Motion Detected
+        data:
+          group: Hassio
+          priority: high
