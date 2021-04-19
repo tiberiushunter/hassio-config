@@ -8,10 +8,11 @@
     - platform: mqtt
       topic: motion/WDC01CAM01
   action:
-    - service: notify.FAMILY_DEVICES
+    - service: notify.ADMIN_DEVICES
       data:
         title: Hassio
         message: Motion Detected
         data:
+          url: "{{ value_json.url }}"
           group: Hassio
           priority: high
