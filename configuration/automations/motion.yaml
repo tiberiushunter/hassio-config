@@ -13,7 +13,7 @@
         title: Hassio
         message: Motion Detected!
         data:
-          clickAction: "{{ trigger.payload.url }}"
-          image: "{{ trigger.payload.image }}"
+          clickAction: "{{ trigger.payload_json.url }}"
+          image: "{{ trigger.payload_json.image }}"
           group: Hassio
           priority: high
