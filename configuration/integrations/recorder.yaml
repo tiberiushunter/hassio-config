@@ -10,7 +10,6 @@ recorder:
   purge_keep_days: 90
   exclude:
     domains:
-      - automation
       - updater
       - mqtt
     entities:
@@ -19,3 +18,4 @@ recorder:
       - sensor.adguard*
       - sensor.iss*
       - sensor.cert*
+      - automation.iss*

@@ -1,0 +1,13 @@
+---
+# 
+# The mqtt binary sensor platform uses an MQTT message received to set the binary sensor’s state to on or off.
+#
+# https://www.home-assistant.io/integrations/binary_sensor.mqtt/
+
+- platform: mqtt
+  name: "Motion Detection"
+  state_topic: "motion/WDC01CAM01"
+  payload_on: "ON"
+  payload_off: "OFF"
+  device_class: "motion"
+  value_template: "{{ value_json.state }}"
