@@ -11,7 +11,7 @@
     - service: notify.ADMIN_DEVICES
       data:
         title: Hassio
-        message: Motion Detected
+        message: Motion Detected!
         data:
           url: "{{ value_json.url }}"
           group: Hassio
