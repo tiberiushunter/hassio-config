@@ -7,7 +7,7 @@
   trigger:
     - platform: mqtt
       topic: motion/WDC01CAM01
-      value_template: "{{ value_json.url, value_json.image }}"
+      payload: "record"
   action:
     - service: notify.ADMIN_DEVICES
       data:
@@ -16,6 +16,7 @@
         data:
           clickAction: "{{ trigger.payload_json.url }}"
           image: "{{ trigger.payload_json.image }}"
+          tag: "{{ trigger.payload_json.url }}"
           group: Hassio
           priority: high
 
@@ -23,13 +24,14 @@
   trigger:
     - platform: mqtt
       topic: motion/WDC01CAM01
-      value_template: "{{ value_json.time }}"
+      payload: "detect"
   action:
     - service: notify.ADMIN_DEVICES
       data:
         title: Hassio
         message: WDC01CAM01 Motion Detected
         data:
-          timeout: 60
+          tag: "{{ trigger.payload_json.detail }}"
+          clickAction: "{{ trigger.payload_json.url }}"
           group: Hassio
           priority: high
