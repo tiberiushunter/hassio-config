@@ -7,13 +7,13 @@
   trigger:
     - platform: mqtt
       topic: motion/WDC01CAM01
-      value_template: "{{ value_json.url }}"
   action:
     - service: notify.ADMIN_DEVICES
       data:
         title: Hassio
         message: Motion Detected!
         data:
-          clickAction: "{{ trigger.payload.url }}"
+          clickAction: "{{ trigger.payload_json.url }}"
+          image: "{{ trigger.payload_json.image }}"
           group: Hassio
           priority: high
