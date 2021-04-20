@@ -10,8 +10,8 @@
   action:
     - service: notify.ADMIN_DEVICES
       data:
-        title: Hassio
-        message: WDC01CAM01 Motion Recorded
+        title: WDC01CAM01
+        message: Motion Recorded
         data:
           clickAction: "{{ trigger.payload_json.url }}"
           image: "{{ trigger.payload_json.image }}"
@@ -26,10 +26,11 @@
   action:
     - service: notify.ADMIN_DEVICES
       data:
-        title: Hassio
-        message: WDC01CAM01 Motion Detected
+        title: WDC01CAM01
+        message: Motion Detected
         data:
           tag: "{{ trigger.payload_json.tag }}"
           clickAction: "{{ trigger.payload_json.url }}"
+          image: "{{ trigger.payload_json.image }}"
           group: Hassio
           priority: high
