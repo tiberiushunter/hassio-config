@@ -11,7 +11,7 @@
     - service: notify.ADMIN_DEVICES
       data:
         title: WDC01CAM01
-        message: Motion Recorded
+        message: Motion Recorded {{ "\ud83d\udd34" }}
         data:
           clickAction: "{{ trigger.payload_json.url }}"
           image: "{{ trigger.payload_json.image }}"
@@ -27,7 +27,7 @@
     - service: notify.ADMIN_DEVICES
       data:
         title: WDC01CAM01
-        message: Motion Detected
+        message: Motion Detected {{ "\u2757" }}
         data:
           tag: "{{ trigger.payload_json.tag }}"
           clickAction: "{{ trigger.payload_json.url }}"
