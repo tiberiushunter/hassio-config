@@ -6,8 +6,7 @@
 - alias: WDC01CAM01 Motion Recorded
   trigger:
     - platform: mqtt
-      topic: motion/WDC01CAM01
-      payload: "record"
+      topic: motion/WDC01CAM01/record
   action:
     - service: notify.ADMIN_DEVICES
       data:
@@ -23,8 +22,7 @@
 - alias: WDC01CAM01 Motion Detected
   trigger:
     - platform: mqtt
-      topic: motion/WDC01CAM01
-      payload: "detect"
+      topic: motion/WDC01CAM01/detect
   action:
     - service: notify.ADMIN_DEVICES
       data:
