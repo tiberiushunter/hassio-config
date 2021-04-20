@@ -15,7 +15,7 @@
         data:
           clickAction: "{{ trigger.payload_json.url }}"
           image: "{{ trigger.payload_json.image }}"
-          tag: "{{ trigger.payload_json.url }}"
+          tag: "{{ trigger.payload_json.tag }}"
           group: Hassio
           priority: high
 
@@ -29,7 +29,7 @@
         title: Hassio
         message: WDC01CAM01 Motion Detected
         data:
-          tag: "{{ trigger.payload_json.detail }}"
+          tag: "{{ trigger.payload_json.tag }}"
           clickAction: "{{ trigger.payload_json.url }}"
           group: Hassio
           priority: high
