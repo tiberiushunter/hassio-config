@@ -16,9 +16,10 @@
         title: Travis CI
         message: Build Failed! {{ "\uD83E\uDD2C" }}
         data:
-          url: https://travis-ci.com/tiberiushunter/hassio-config
+          url: "https://travis-ci.com/tiberiushunter/hassio-config"
           group: Hassio
           priority: high
+          icon_url: "https://github.com/home-assistant/brands/blob/master/core_integrations/travisci/icon.png?raw=true"
 
 - alias: System Travis Build Passed
   trigger:
@@ -32,9 +33,10 @@
         title: Travis CI
         message: Build Passed! {{ "\uD83D\uDC4D" }}
         data:
-          url: https://travis-ci.com/tiberiushunter/hassio-config
+          url: "https://travis-ci.com/tiberiushunter/hassio-config"
           group: Hassio
           priority: high
+          icon_url: "https://github.com/home-assistant/brands/blob/master/core_integrations/travisci/icon.png?raw=true"
     - service: hassio.addon_start
       data:
         addon: core_git_pull

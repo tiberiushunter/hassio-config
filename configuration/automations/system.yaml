@@ -15,6 +15,7 @@
         data:
           group: Hassio
           priority: high
+          icon_url: "https://raw.githubusercontent.com/home-assistant/brands/master/core_integrations/_homeassistant/icon.png?raw=true"
 
 - alias: Hassio Shutdown Notification
   trigger:
@@ -28,3 +29,4 @@
         data:
           group: Hassio
           priority: high
+          icon_url: "https://raw.githubusercontent.com/home-assistant/brands/master/core_integrations/_homeassistant/icon.png?raw=true"
