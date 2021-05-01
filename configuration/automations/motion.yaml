@@ -15,14 +15,13 @@
         data:
           clickAction: "{{ trigger.payload_json.url }}"
           image: "{{ trigger.payload_json.image }}"
-          tag: "{{ trigger.payload_json.tag }}"
           group: Hassio
           priority: high
 
 - alias: WDC01CAM01 Motion Detected
   trigger:
     - platform: mqtt
-      topic: motion/WDC01CAM01/detect
+      topic: motion/WDC01CAM01/detect/start
   action:
     - service: notify.ADMIN_DEVICES
       data:
@@ -34,3 +33,14 @@
           image: "{{ trigger.payload_json.image }}"
           group: Hassio
           priority: high
+
+- alias: WDC01CAM01 Clear Motion Detection
+  trigger:
+    - platform: mqtt
+      topic: motion/WDC01CAM01/detect/stop
+  action:
+    - service: notify.ADMIN_DEVICES
+      data:
+        message: "clear_notification"
+        data:
+          tag: "{{ trigger.payload_json.tag }}"
