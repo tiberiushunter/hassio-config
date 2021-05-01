@@ -28,7 +28,7 @@
         title: WDC01CAM01
         message: Motion Detected {{ "\ud83d\udd34" }}
         data:
-          tag: "{{ trigger.payload_json.tag }}"
+          tag: "WDC01CAM01-Motion-Detected"
           clickAction: "{{ trigger.payload_json.url }}"
           image: "{{ trigger.payload_json.image }}"
           group: Hassio
@@ -43,4 +43,4 @@
       data:
         message: "clear_notification"
         data:
-          tag: "{{ trigger.payload_json.tag }}"
+          tag: "WDC01CAM01-Motion-Detected"
