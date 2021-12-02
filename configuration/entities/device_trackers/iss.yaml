@@ -8,4 +8,3 @@
 - platform: mqtt_json
   devices:
     iss: location/iss
-  

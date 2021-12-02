@@ -1,0 +1,19 @@
+name: CI
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Generate Secrets file and Fake Keys
+        run: |
+          mv secrets.sample.yaml secrets.yaml
+          touch fullchain.pem
+          touch privkey.pem
+
+      - uses: tiberiushunter/action-ha-config-check@master
+        with:
+          ha_version: "latest"
+        env:
+          HASS_EXTRA_ARGS: "-f -s -i"

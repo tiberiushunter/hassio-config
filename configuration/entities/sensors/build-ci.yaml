@@ -1,15 +1,23 @@
 ---
 # 
-# This package contains the automations and sensors relating to Travis CI
-# Based on danrspencer's hassio config: https://github.com/danrspencer/hass-config/blob/master/configuration/package/build_ci.yaml
+# This package contains the automations and sensors relating to Github Actions CI
 #
 
 - platform: rest
-  resource: https://api.travis-ci.com/repo/tiberiushunter%2Fhassio-config/builds?limit=1
+  resource: https://api.github.com/repos/tiberiushunter/hassio-config/actions/runs?per_page=1
   headers:
-    Travis-API-Version: 3
-  value_template: "{{ value_json.builds[0].state }}"
-  name: "Travis Build Status"
+    Accept: application/vnd.github.v3+json
+    Content-Type: application/json
+    User-Agent: Home Assistant REST sensor
+    Authorization: !secret github_actions_token
+  value_template: >
+    {% if value_json.workflow_runs[0].status != "completed" %}
+      {{ value_json.workflow_runs[0].status }}
+    {% else %}
+      {{ value_json.workflow_runs[0].conclusion }}
+    {% endif %}
+  
+  name: "Github Actions Build Status"
 
 - platform: command_line
   name: Git

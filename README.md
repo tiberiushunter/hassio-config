@@ -1,4 +1,4 @@
-# TiberiusHunter's Hassio Configuration
+# TiberiusHunter's Home Assistant Configuration
 
 <!-- PROJECT SHIELDS -->
 <!--
@@ -9,8 +9,6 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![Build Status][travis-ci-shield-main]][travis-ci-url]
-[![Build Status][travis-ci-shield-dev]][travis-ci-url]
 ![Project Maintenance][maintenance-shield]
 [![MIT License][license-shield]][license-url]
 
@@ -27,9 +25,9 @@ A repository storing and backing up my Home Assistant configuration
 <!-- FILE STRUCTURE -->
 ## File Structure
 
-The entry point for Hassio is the `configuration.yaml` file. From there I've split up the configuration into various folders and files found under the `/configuration/` directory.
+The entry point for Home Assistant is the `configuration.yaml` file. From there I've split up the configuration into various folders and files found under the `/configuration/` directory.
 
-This has simply been to reduce the size of the `configuration.yaml` *especially as my previous installation of Hassio ended up being a nightmare to maintain..* :roll_eyes:
+This has simply been to reduce the size of the `configuration.yaml` *especially as my previous installation of Home Assistant ended up being a nightmare to maintain..* :roll_eyes:
 
 From the `configuration.yaml` file, all the files under the `configuration/integrations/` directory get imported - this lists what you'd likely see in a regular configuration file.
 
@@ -40,7 +38,7 @@ Once an integration contains any entities, sensors, scenes, scripts, etc. I then
 
 This repository has been designed to be used with the default [git pull addon][addon-git-pull] once the build passes on the main branch.
 
-When there are changes to any of the configuration files Hassio will pull the latest changes and automatically restart :tada:
+When there are changes to any of the configuration files Home Assistant will pull the latest changes and automatically restart :tada:
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -86,12 +84,7 @@ Project Link: [GitHub][project-url]
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
 <!-- Project Specific -->
-[project-url]: https://github.com/tiberiushunter/hassio-config
-
-[travis-ci-shield-dev]: https://img.shields.io/travis/com/tiberiushunter/hassio-config/dev?logo=travis&style=for-the-badge&label=dev
-[travis-ci-shield-main]: https://img.shields.io/travis/com/tiberiushunter/hassio-config/main?logo=travis&style=for-the-badge&label=main
-
-[travis-ci-url]: https://travis-ci.com/tiberiushunter/hassio-config
+[project-url]: https://github.com/tiberiushunter/hassio-config/
 
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2021.svg?style=for-the-badge
 
