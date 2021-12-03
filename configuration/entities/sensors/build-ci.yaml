@@ -5,11 +5,13 @@
 
 - platform: rest
   resource: https://api.github.com/repos/tiberiushunter/hassio-config/actions/runs?per_page=1
+  username: !secret github_actions_user
+  password: !secret github_actions_token
+  authentication: basic
   headers:
     Accept: application/vnd.github.v3+json
     Content-Type: application/json
     User-Agent: Home Assistant REST sensor
-    Authorization: !secret github_actions_token
   value_template: >
     {% if value_json.workflow_runs[0].status != "completed" %}
       {{ value_json.workflow_runs[0].status }}
