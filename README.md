@@ -86,7 +86,7 @@ Project Link: [GitHub][project-url]
 <!-- Project Specific -->
 [project-url]: https://github.com/tiberiushunter/hassio-config/
 
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2021.svg?style=for-the-badge
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2022.svg?style=for-the-badge
 
 [contributors-shield]: https://img.shields.io/github/contributors/tiberiushunter/hassio-config.svg?style=for-the-badge
 [contributors-url]: https://github.com/tiberiushunter/hassio-config/graphs/contributors
