@@ -19,7 +19,7 @@
       {{ value_json.workflow_runs[0].conclusion }}
     {% endif %}
   scan_interval:
-    seconds: 30
+    seconds: 120
   
   name: "Github Actions Build Status"
 

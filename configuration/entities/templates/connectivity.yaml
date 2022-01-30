@@ -1,0 +1,14 @@
+---
+# 
+# This package contains the sensors relating to Intenral and External Ping times
+#
+
+- sensor:
+  - name: "Internal Ping Time"
+    unit_of_measurement: "ms"
+    state: "{{ state_attr('binary_sensor.internal', 'round_trip_time_max')  }}"
+
+- sensor:
+  - name: "External Ping Time"
+    unit_of_measurement: "ms"
+    state: "{{ state_attr('binary_sensor.external', 'round_trip_time_max')  }}"

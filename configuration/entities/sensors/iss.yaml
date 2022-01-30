@@ -13,7 +13,7 @@
     - longitude
   resource: 'http://api.open-notify.org/iss-now.json'
   scan_interval:
-    seconds: 15
+    seconds: 30
 
 - platform: rest
   name: ISS Pass times
@@ -24,7 +24,7 @@
     {{ value_json.message }}
   resource: !secret iss_pass_times_url
   scan_interval:
-    seconds: 300
+    seconds: 3600
 
 - platform: rest
   name: ISS People in space
@@ -33,6 +33,8 @@
     - number
   value_template: "{{ value_json['number'] }}"
   resource: 'http://api.open-notify.org/astros.json'
+  scan_interval:
+    seconds: 86400
  
 - platform: template
   sensors:

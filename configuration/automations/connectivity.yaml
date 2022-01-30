@@ -1,0 +1,39 @@
+---
+# 
+# This package contains the automations and sensors relating to Network Connectivity
+#
+
+- alias: Internet Connectivity Lost
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.external
+      from: "on"
+      to: "off"
+  action:
+    - service: notify.ADMIN_DEVICES
+      data:
+        title: Network Status
+        message: Internet Connectivity Lost
+        data:
+          tag: networkStatus
+          group: Hassio
+          priority: high
+          persistent: true
+          color: "#DC3545"
+       
+- alias: Internet Connectivity Restored
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.external
+      from: "off"
+      to: "on"
+  action:
+    - service: notify.ADMIN_DEVICES
+      data:
+        title: Network Status
+        message: Internet Connectivity Restored
+        data:
+          tag: networkStatus
+          message: clear_notification
+          group: Hassio
+          priority: high
