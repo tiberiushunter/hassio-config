@@ -17,6 +17,7 @@
           url: "https://github.com/tiberiushunter/hassio-config/actions"
           group: Hassio
           priority: high
+          tag: ciBuild
           icon_url: "https://github.com/home-assistant/brands/blob/master/core_integrations/github/icon.png?raw=true"
 
 - alias: Github Actions Build Failed
@@ -33,6 +34,8 @@
           url: "https://github.com/tiberiushunter/hassio-config/actions"
           group: Hassio
           priority: high
+          tag: ciBuild
+          message: clear_notification
           icon_url: "https://github.com/home-assistant/brands/blob/master/core_integrations/github/icon.png?raw=true"
 
 - alias: Github Actions Build Passed
@@ -49,6 +52,8 @@
           url: "https://github.com/tiberiushunter/hassio-config/actions"
           group: Hassio
           priority: high
+          tag: ciBuild
+          message: clear_notification
           icon_url: "https://github.com/home-assistant/brands/blob/master/core_integrations/github/icon.png?raw=true"
     - service: hassio.addon_start
       data:

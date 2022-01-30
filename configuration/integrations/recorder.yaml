@@ -14,8 +14,10 @@ recorder:
       - mqtt
     entities:
       - sensor.date
+      - device_tracker.iss
     entity_globs:
       - sensor.adguard*
       - sensor.iss*
       - sensor.cert*
-      - automation.iss*
+      - automation.*
+      - switch.adguard*
