@@ -1,7 +1,0 @@
----
-# 
-# The updater binary sensor will check daily for new releases.
-#
-# https://www.home-assistant.io/integrations/updater/
-
-updater: ~
