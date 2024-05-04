@@ -3,6 +3,8 @@ homeassistant:
   latitude: !secret latitude
   longitude: !secret longitude
   elevation: !secret elevation
+  currency: !secret currency
+  country: !secret country
   unit_system: metric
   time_zone: Europe/London
   external_url: !secret external_url
