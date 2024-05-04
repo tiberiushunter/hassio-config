@@ -74,7 +74,7 @@ Owner: Sam Welek
 
 [![GitHub][github-shield]][github-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-[![Twitter][twitter-shield]][twitter-url]
+[![X][x-shield]][x-url]
 
 <a href="https://www.buymeacoffee.com/tiberiushunter" target="_blank"> <img src="https://cdn.buymeacoffee.com/buttons/default-yellow.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
@@ -86,7 +86,7 @@ Project Link: [GitHub][project-url]
 <!-- Project Specific -->
 [project-url]: https://github.com/tiberiushunter/hassio-config/
 
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2022.svg?style=for-the-badge
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2024.svg?style=for-the-badge
 
 [contributors-shield]: https://img.shields.io/github/contributors/tiberiushunter/hassio-config.svg?style=for-the-badge
 [contributors-url]: https://github.com/tiberiushunter/hassio-config/graphs/contributors
@@ -112,8 +112,8 @@ Project Link: [GitHub][project-url]
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/sam-welek
 
-[twitter-shield]: https://img.shields.io/badge/-Twitter-black.svg?style=for-the-badge&logo=twitter&colorB=555
-[twitter-url]: https://twitter.com/samwelek
+[x-shield]: https://img.shields.io/badge/-X-black.svg?style=for-the-badge&logo=x&colorB=555
+[x-url]: https://x.com/samwelek
 
 <!-- Acknowledgement Specific -->
 [1]: https://gist.github.com/rxaviers/7360908
