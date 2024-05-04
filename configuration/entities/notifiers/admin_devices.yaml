@@ -4,4 +4,4 @@
 - name: ADMIN_DEVICES
   platform: group
   services:
-    - service: mobile_app_sam_s_phone
+    - service: mobile_app_wdc01md01
